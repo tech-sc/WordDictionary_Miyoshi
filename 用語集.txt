@@ -1,35 +1,35 @@
-# �}�j���A���p��
+# マニュアル用語
 
-ST�FST�G���N�g���j�N�X�iSTMicroelectronics�j�Ƃ�����Ж��́B
-ARM Cortex-M�x�[�X��32bit�}�C�R����STM32�Ȃǂ̃}�C�R���𐻑��B
+ST：STエレクトロニクス（STMicroelectronics）という会社名称。
+ARM Cortex-Mベースの32bitマイコンのSTM32などのマイコンを製造。
 
-�G���b�^�F�A�뎚�A��A�A��ʂȂǂ̈Ӗ������p�P��B
-�܂��A�]���āA������̌뎚�Ȃǂ̒����\�A����\�Ƃ����Ӗ�������B
+エラッタ：、誤字、誤植、誤写などの意味を持つ英単語。
+また、転じて、印刷物の誤字などの訂正表、正誤表という意味もある。
 
-# �}�C�R���֘A
+# マイコン関連
 
-UART�iUniversal Asynchronous Receiver/Transmitter�j�F
-�����������̃V���A���M�����p�������M���ɕϊ�������A�p�������M�����V���A���M���ɕϊ������H�B
-�����������Ƃ́A�J�n�ƏI���̍��}�i�X�^�[�g�r�b�g�A�X�g�b�v�r�b�g�j�ɂ��������ăf�[�^��ʐM��������̂��ƁB
+UART（Universal Asynchronous Receiver/Transmitter）：
+調歩同期式のシリアル信号をパラレル信号に変換したり、パラレル信号をシリアル信号に変換する回路。
+調歩同期式とは、開始と終了の合図（スタートビット、ストップビット）にしたがってデータを通信する方式のこと。
 
-���U��H�i�I�V���[�^�j�Felectronic oscillator
-�𗬐M���𔭐������邽�߂̉�H�BOSC�Ɨ������肷�邱�Ƃ�����B
-�}�C�R���ł́A�N���b�N���U��ƌĂ΂��B
+発振回路（オシレータ）：electronic oscillator
+交流信号を発生させるための回路。OSCと略したりすることもある。
+マイコンでは、クロック発振器と呼ばれる。
 
-���C�g�o�b�N(WriteBack)�F
-�L���b�V���̃f�[�^�X�V���@�̂��ƁB
-�L���b�V���ɏ������ݎ��ɁA���C���������ւ̏������݂͍s�킸�A
-�L���b�V�����C����ǂ��o�����Ƀf�[�^�X�V�iModified�r�b�g���Z�b�g���ꂽ��ԁj
-�ɂ̂݁A���C���������ɏ����߂������B
+ライトバック(write back)：
+キャッシュのデータ更新方法のこと。
+キャッシュに書き込み時に、メインメモリへの書き込みは行わず、
+キャッシュラインを追い出し時にデータ更新（Modifiedビットがセットされた状態）
+にのみ、メインメモリに書き戻す方式。
 
-���C�g�X���[(WriteThro)�F
-�L���b�V���̃f�[�^�X�V���@�̂��ƁB
-�L���b�V���ɏ������ލۂɁA���C���������ɂ������f�[�^���������ޕ����B
-���C���������ɃA�N�Z�X���邽�߁A�X�g�A���ߎ��̏����Ɏ��Ԃ�������B
+ライトスルー(write through)：
+キャッシュのデータ更新方法のこと。
+キャッシュに書き込む際に、メインメモリにも同じデータを書き込む方式。
+メインメモリにアクセスするため、ストア命令時の処理に時間がかかる。
 
-�G���f�B�A���Fendian�̂��ƁB
+エンディアン：endianのこと。
 
-�r�b�O�G���f�B�A���F
+ビッグエンディアン：
 
-���g���G���f�B�A���F
+リトルエンディアン：
 
